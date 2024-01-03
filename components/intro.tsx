@@ -60,7 +60,7 @@ function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hello, I'm Madhu.</span> I'm a{" "}
+        <span className="font-bold">Hello, I'm MadhuSudan.</span> I'm a{" "}
         <span className="font-bold">Front-end developer</span> with . I enjoy
         building <span className="italic">sites & apps</span>. My focus is{" "}
         <span className="underline">React (Next.js)</span>.
