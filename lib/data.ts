@@ -2,10 +2,10 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import rmtdevImg from "../public/public/rmtdev.png";
-import wordanalyticsImg from "../public/public/wordanalytics.png";
-import readyTensor from "../public/public/readyTensor.png";
-import astra from "../public/public/astra.png";
+import rmtdevImg from "../public/rmtdev.png";
+import wordanalyticsImg from "../public/wordanalytics.png";
+import readyTensor from "../public/readyTensor.png";
+import astra from "../public/astra.png";
 
 export const links = [
   {
