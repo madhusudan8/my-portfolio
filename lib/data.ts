@@ -63,14 +63,14 @@ export const projectsData = [
   {
     title: "Ready Tensor",
     description:
-      "Served as a full-stack developer for this startup project over the course of one year. The platform enables users to submit algorithms for evaluation, featuring advanced functionalities such as filtering, user avatars, and pagination.",
+      "Developed a platform for algorithm evaluation, featuring user submissions, filtering, avatars, and pagination.",
     tags: ["React", "TypeScript", "MUI", "Express.js", "Sequelize", "MySQL"],
     imageUrl: readyTensor,
   },
   {
     title: "Astra",
     description:
-      "Led the front-end development of a dynamic admin portal in the betting industry. Implemented advanced features such as sophisticated filtering and enhanced user experience through seamless pagination and date range selection.",
+      "Led front-end development for an admin portal, implementing advanced filtering and seamless pagination.",
     tags: ["React", "Redux Toolkit", "SCSS"],
     imageUrl: astra,
   },
