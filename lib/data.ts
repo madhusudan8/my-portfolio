@@ -37,7 +37,7 @@ export const experiencesData = [
     title: "Graduation",
     location: "Bhubaneswar, Odisha",
     description:
-      "After completing a four-year academic program, I successfully graduated and subsequently secured a position as a front-end developer. I am enthusiastic about applying my acquired knowledge and skills in a professional work environment.",
+      "Successfully completed a four-year academic program, culminating in graduation. Subsequently, secured a position as a front-end developer, eager to apply my knowledge and skills in a professional environment.",
     icon: React.createElement(LuGraduationCap),
     date: "2021",
   },
@@ -45,15 +45,15 @@ export const experiencesData = [
     title: "Suvarchala Solutionzs",
     location: "Remote",
     description:
-      "I have accumulated one year of experience working remotely as a front-end developer. During this time, I proactively upskilled myself to become proficient in full-stack development, expanding my capabilities beyond the front-end domain.",
+      "Gained one year of experience as a remote front-end developer, during which I proactively enhanced my skill set to become proficient in full-stack development, thereby broadening my technical capabilities.",
     icon: React.createElement(CgWorkAlt),
     date: "2022 - 2023",
   },
   {
-    title: "SportsIT",
+    title: "NE Group",
     location: "Hyderabad",
     description:
-      "I am currently a proficient React developer with expertise in utilizing technologies such as React, Next.js, TypeScript, Tailwind, Redux Toolkit, and MongoDB within my stack. I am actively seeking full-time opportunities .",
+      "Currently employed as a proficient React developer with expertise in technologies such as React, Next.js, TypeScript, Tailwind, Redux Toolkit, and MongoDB. Actively seeking full-time opportunities to further my career.",
     icon: React.createElement(FaReact),
     date: "2023 - present",
   },
@@ -63,25 +63,19 @@ export const projectsData = [
   {
     title: "Ready Tensor",
     description:
-      "I worked as a full-stack developer on this startup project for 1 years. Users can submit their algotithms to get Evalution Score. It has features like filtering, Avatars and pagination",
-    tags: ["React", "Typescript", "MUI", "Express.js", "Sequelize", "My Sql"],
+      "Served as a full-stack developer for this startup project over the course of one year. The platform enables users to submit algorithms for evaluation, featuring advanced functionalities such as filtering, user avatars, and pagination.",
+    tags: ["React", "TypeScript", "MUI", "Express.js", "Sequelize", "MySQL"],
     imageUrl: readyTensor,
   },
   {
     title: "Astra",
     description:
-      "Lead front-end developer for a dynamic Admin Portal in the betting industry. Implemented features like advanced filtering Enhanced user experience with seamless pagination and date range selection",
+      "Led the front-end development of a dynamic admin portal in the betting industry. Implemented advanced features such as sophisticated filtering and enhanced user experience through seamless pagination and date range selection.",
     tags: ["React", "Redux Toolkit", "SCSS"],
     imageUrl: astra,
   },
-  // {
-  //   title: "Word Analytics",
-  //   description:
-  //     "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-  //   tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-  //   imageUrl: wordanalyticsImg,
-  // },
 ] as const;
+
 
 export const skillsData = [
   "HTML",
