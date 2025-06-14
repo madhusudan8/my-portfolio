@@ -1,10 +1,9 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
-import { LuGraduationCap } from "react-icons/lu";
+import { LuAnchor } from "react-icons/lu";
 import readyTensor from "../public/readyTensor.png";
 import astra from "../public/astra.png";
-
 export const links = [
   {
     name: "Home",
@@ -34,14 +33,6 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduation",
-    location: "Bhubaneswar, Odisha",
-    description:
-      "Successfully completed a four-year academic program, culminating in graduation. Subsequently, secured a position as a front-end developer, eager to apply my knowledge and skills in a professional environment.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2021",
-  },
-  {
     title: "Suvarchala Solutionzs",
     location: "Remote",
     description:
@@ -53,9 +44,17 @@ export const experiencesData = [
     title: "NE Group",
     location: "Hyderabad",
     description:
-      "Currently employed as a proficient React developer with expertise in technologies such as React, Next.js, TypeScript, Tailwind, Redux Toolkit, and MongoDB. Actively seeking full-time opportunities to further my career.",
+      "Currently employed as a proficient React developer with expertise in technologies such as React, Next.js, TypeScript, Tailwind, Redux Toolkit.",
     icon: React.createElement(FaReact),
-    date: "2023 - present",
+    date: "2023 - 2025",
+  },
+  {
+    title: "Compileinfy",
+    location: "Hyderabad",
+    description:
+      "Currently employed as a proficient Full-stack developer with expertise in technologies such as Next.js, TypeScript, Tailwind, Transtack Query and AWS Amplify. Actively seeking full-time opportunities to further my career.",
+    icon: React.createElement(LuAnchor),
+    date: "2025 - present",
   },
 ] as const;
 
@@ -76,7 +75,6 @@ export const projectsData = [
   },
 ] as const;
 
-
 export const skillsData = [
   "HTML",
   "CSS",
@@ -90,7 +88,9 @@ export const skillsData = [
   "Next.js",
   "Node.js",
   "Express",
-  "MongoDB",
   "Git",
   "Framer Motion",
+  "Tran-stack Query",
+  "GraphQL",
+  "AWS Amplify",
 ] as const;
