@@ -2,6 +2,7 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuAnchor } from "react-icons/lu";
+import { AiFillCode } from "react-icons/ai";
 import readyTensor from "../public/readyTensor.png";
 import astra from "../public/astra.png";
 export const links = [
@@ -38,7 +39,7 @@ export const experiencesData = [
     description:
       "Gained one year of experience as a remote front-end developer, during which I proactively enhanced my skill set to become proficient in full-stack development, thereby broadening my technical capabilities.",
     icon: React.createElement(CgWorkAlt),
-    date: "2022 - 2023",
+    date: "2022 Aug - 2023 July",
   },
   {
     title: "NE Group",
@@ -46,15 +47,23 @@ export const experiencesData = [
     description:
       "Currently employed as a proficient React developer with expertise in technologies such as React, Next.js, TypeScript, Tailwind, Redux Toolkit.",
     icon: React.createElement(FaReact),
-    date: "2023 - 2025",
+    date: "2023 Sept - 2025 Jan",
   },
   {
     title: "Compileinfy",
     location: "Hyderabad",
     description:
-      "Currently employed as a proficient Full-stack developer with expertise in technologies such as Next.js, TypeScript, Tailwind, Transtack Query and AWS Amplify. Actively seeking full-time opportunities to further my career.",
+      "Currently employed as a proficient Full-stack developer with expertise in technologies such as Next.js, TypeScript, Tailwind, TanStack Query and AWS Amplify.",
     icon: React.createElement(LuAnchor),
-    date: "2025 - present",
+    date: "2025 Feb - 2026 Jan",
+  },
+    {
+    title: "DAZN",
+    location: "On-site",
+    description:
+      "Joined as a Software Developer focusing on building scalable front-end features using Next.js, TypeScript and React.",
+    icon: React.createElement(AiFillCode),
+    date: "2026 Feb - present",
   },
 ] as const;
 
@@ -90,7 +99,7 @@ export const skillsData = [
   "Express",
   "Git",
   "Framer Motion",
-  "Tran-stack Query",
+  "TanStack Query",
   "GraphQL",
   "AWS Amplify",
 ] as const;
