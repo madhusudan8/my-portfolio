@@ -7,7 +7,6 @@ import {
   Heading,
   Hr,
   Html,
-  Img,
   Link,
   Preview,
   Section,
@@ -15,7 +14,7 @@ import {
 } from "@react-email/components";
 import { Tailwind } from "@react-email/components";
 
-type ContactFromEmailProps = {
+type ContactFormEmailProps = {
   message: string;
   senderEmail: string;
 };
@@ -23,80 +22,136 @@ type ContactFromEmailProps = {
 export default function ContactEmail({
   message,
   senderEmail,
-}: ContactFromEmailProps) {
+}: ContactFormEmailProps) {
+  const senderInitial =
+    senderEmail?.split("@")[0]?.charAt(0)?.toUpperCase() || "👤";
+
   return (
     <Html>
       <Head />
-      <Preview>New message from your portfolio site</Preview>
+      <Preview>✨ You’ve got a new message — take a look</Preview>
+
       <Tailwind>
-        <Body className="bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-950 font-sans">
-          <Container className="mx-auto py-12 px-4">
-            <Section className="bg-white dark:bg-gray-800 rounded-2xl shadow-xl overflow-hidden max-w-2xl mx-auto">
-              {/* Header with gradient */}
-              <Section className="bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-500 dark:to-purple-500 px-10 py-8">
-                <Heading className="text-white text-3xl font-bold m-0 leading-tight">
-                  📬 New Contact Message
+        <Body className="bg-slate-950 font-sans antialiased">
+          <Container className="mx-auto max-w-2xl px-4 py-12">
+
+            {/* Card */}
+            <Section className="relative overflow-hidden rounded-3xl border border-slate-800 bg-slate-900 shadow-2xl">
+
+              {/* Header */}
+              <Section className="relative overflow-hidden bg-gradient-to-br from-violet-600 via-purple-600 to-fuchsia-600 px-10 py-14">
+                <Section className="absolute -top-32 -right-32 h-64 w-64 rounded-full bg-white opacity-5" />
+                <Section className="absolute -bottom-24 -left-24 h-48 w-48 rounded-full bg-white opacity-5" />
+
+                <Text className="mb-3 flex items-center text-xs font-bold uppercase tracking-widest text-violet-200">
+                  <span className="mr-2 inline-block h-2 w-2 rounded-full bg-green-400" />
+                  Fresh Message
+                </Text>
+
+                <Heading className="m-0 mb-3 text-5xl font-black leading-tight text-white">
+                  ✨ You’ve Got Mail!
                 </Heading>
-                <Text className="text-blue-100 dark:text-blue-200 text-sm mt-2 m-0">
-                  Someone reached out through your portfolio
+
+                <Text className="m-0 text-base font-medium text-violet-100 opacity-95">
+                  Someone just reached out through your portfolio
                 </Text>
               </Section>
 
-              {/* Message Content */}
-              <Section className="px-10 py-8">
-                <Text className="text-gray-500 dark:text-gray-400 text-xs uppercase tracking-wider font-semibold mb-3 mt-0">
-                  Message
-                </Text>
-                <Section className="bg-gray-50 dark:bg-gray-700 border-l-4 border-blue-500 dark:border-blue-400 rounded-lg p-6 mb-6">
-                  <Text className="text-gray-800 dark:text-gray-100 text-base leading-relaxed m-0 whitespace-pre-wrap">
-                    {message}
+              {/* Content */}
+              <Section className="bg-slate-900 px-10 py-10">
+
+                {/* Message */}
+                <Section className="mb-10">
+                  <Text className="mb-4 flex items-center text-xs font-bold uppercase tracking-wider text-slate-400">
+                    <span className="mr-2 flex h-6 w-6 items-center justify-center rounded-lg bg-gradient-to-br from-blue-500 to-cyan-500 text-xs text-white">
+                      💬
+                    </span>
+                    What they wrote
+                  </Text>
+
+                  <Section className="relative overflow-hidden rounded-2xl border border-slate-700 bg-gradient-to-br from-slate-800 to-slate-850 p-8 shadow-lg">
+                    <Section className="absolute left-0 top-0 h-1 w-full bg-gradient-to-r from-transparent via-blue-500 to-transparent opacity-50" />
+
+                    <Text className="m-0 whitespace-pre-wrap text-lg leading-relaxed text-slate-100">
+                      {message}
+                    </Text>
+                  </Section>
+
+                  <Text className="mt-4 text-xs italic text-slate-500">
+                    Sent with intention — read when ready ✨
                   </Text>
                 </Section>
 
-                <Hr className="border-gray-200 dark:border-gray-700 my-6" />
+                <Hr className="my-8 border-slate-800" />
 
-                {/* Sender Info */}
-                <Section className="bg-gradient-to-br from-gray-50 to-blue-50 dark:from-gray-700 dark:to-blue-900/30 rounded-xl p-6">
-                  <Text className="text-gray-500 dark:text-gray-400 text-xs uppercase tracking-wider font-semibold mb-3 mt-0">
-                    Sender Details
+                {/* Sender */}
+                <Section className="mb-10">
+                  <Text className="mb-4 flex items-center text-xs font-bold uppercase tracking-wider text-slate-400">
+                    <span className="mr-2 flex h-6 w-6 items-center justify-center rounded-lg bg-gradient-to-br from-violet-500 to-purple-500 text-xs text-white">
+                      👋
+                    </span>
+                    Who’s reaching out
                   </Text>
-                  <Section className="flex items-center">
-                    <Text className="text-gray-700 dark:text-gray-200 font-medium m-0">
-                      📧 Email:
-                    </Text>
-                    <Link
-                      href={`mailto:${senderEmail}`}
-                      className="text-blue-600 dark:text-blue-400 font-semibold ml-2 no-underline hover:underline"
-                    >
-                      {senderEmail}
-                    </Link>
+
+                  <Section className="flex items-center rounded-2xl border border-slate-700 bg-gradient-to-br from-slate-800 to-slate-850 p-6 shadow-lg">
+                    <Section className="mr-4 flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-violet-500 to-fuchsia-500 text-xl font-bold text-white shadow-lg">
+                      {senderInitial}
+                    </Section>
+
+                    <Section className="flex-1">
+                      <Text className="mb-1 text-xs font-semibold uppercase tracking-wider text-slate-500">
+                        Reply-to Email
+                      </Text>
+
+                      <Link
+                        href={`mailto:${senderEmail}`}
+                        className="break-all text-base font-semibold text-violet-400 no-underline transition-colors hover:text-violet-300"
+                      >
+                        {senderEmail}
+                      </Link>
+                    </Section>
                   </Section>
                 </Section>
 
-                {/* Action Button */}
-                <Section className="text-center mt-8">
+                {/* CTA */}
+                <Section className="mt-10 text-center">
                   <Button
-                    href={`mailto:${senderEmail}`}
-                    className="bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-500 dark:to-purple-500 text-white font-semibold py-3 px-8 rounded-lg no-underline inline-block shadow-lg hover:shadow-xl transition-shadow"
+                    href={`mailto:${senderEmail}?subject=Re:%20Your%20message`}
+                    className="inline-block rounded-2xl bg-gradient-to-r from-violet-600 via-purple-600 to-fuchsia-600 px-16 py-5 text-lg font-bold text-white no-underline shadow-2xl transition-all hover:from-violet-700 hover:via-purple-700 hover:to-fuchsia-700"
                   >
-                    Reply to Message
+                    🚀 Continue the conversation
                   </Button>
+
+                  <Text className="mt-4 text-xs text-slate-500">
+                    Respond directly — it opens your email app
+                  </Text>
                 </Section>
               </Section>
 
               {/* Footer */}
-              <Section className="bg-gray-50 dark:bg-gray-900 px-10 py-6 border-t border-gray-200 dark:border-gray-700">
-                <Text className="text-gray-500 dark:text-gray-400 text-xs text-center m-0 leading-relaxed">
-                  This message was sent from your portfolio contact form
-                  <br />
-                  <Link
-                    href="https://yourportfolio.com"
-                    className="text-blue-600 dark:text-blue-400 no-underline hover:underline"
-                  >
-                    Visit your portfolio
-                  </Link>
+              <Section className="border-t border-slate-800 bg-slate-950 px-10 py-8 text-center">
+                <Text className="mb-3 text-sm leading-relaxed text-slate-500">
+                  This message was sent via your portfolio — nice work 👏
+                </Text>
+
+                <Link
+                  href="https://madhu-sudan-portfolio.vercel.app/"
+                  className="text-sm font-semibold text-violet-400 no-underline transition-colors hover:text-violet-300"
+                >
+                  Visit Portfolio →
+                </Link>
+
+                <Text className="mt-6 text-xs text-slate-600">
+                  © 2026 Your Portfolio • Made with 💜
                 </Text>
               </Section>
+            </Section>
+
+            {/* Badge */}
+            <Section className="mt-6 text-center">
+              <Text className="text-xs font-medium text-slate-600">
+                ⚡ Crafted with care, delivered instantly
+              </Text>
             </Section>
           </Container>
         </Body>
