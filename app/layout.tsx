@@ -39,8 +39,8 @@ export default function RootLayout({
           </ActiveSectionContextProvider>
         </ThemeContextProvider>
         <SpeedInsights />
+        <Analytics />
       </body>
-      <Analytics />
     </html>
   );
 }
