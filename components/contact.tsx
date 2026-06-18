@@ -54,7 +54,7 @@ export default function Contact() {
           name="senderEmail"
           type="email"
           required
-          maxLength={30}
+          maxLength={254}
           placeholder="Your email"
         />
         <textarea

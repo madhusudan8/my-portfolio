@@ -34,20 +34,13 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Suvarchala Solutionzs",
-    location: "Remote",
+    title: "DAZN",
+    location: "On-site",
     description:
-      "Gained one year of experience as a remote front-end developer, during which I proactively enhanced my skill set to become proficient in full-stack development, thereby broadening my technical capabilities.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2022 Aug - 2023 July",
-  },
-  {
-    title: "NE Group",
-    location: "Hyderabad",
-    description:
-      "Currently employed as a proficient React developer with expertise in technologies such as React, Next.js, TypeScript, Tailwind, Redux Toolkit.",
-    icon: React.createElement(FaReact),
-    date: "2023 Sept - 2025 Jan",
+      "Enhanced DAZN News platform's SEO and performance using Next.js SSR. Optimized structured data and metadata for search visibility, and integrated robust analytics for tracking insights.",
+    icon: React.createElement(AiFillCode),
+    date: "2026 Feb - present",
+    url: "https://www.dazn.com/en-GB/news",
   },
   {
     title: "Compileinfy",
@@ -56,14 +49,25 @@ export const experiencesData = [
       "Currently employed as a proficient Full-stack developer with expertise in technologies such as Next.js, TypeScript, Tailwind, TanStack Query and AWS Amplify.",
     icon: React.createElement(LuAnchor),
     date: "2025 Feb - 2026 Jan",
+    url: "https://compileinfy.com/",
   },
-    {
-    title: "DAZN",
-    location: "On-site",
+  {
+    title: "NE Group",
+    location: "Hyderabad",
     description:
-      "Joined as a Software Developer focusing on building scalable front-end features using Next.js, TypeScript and React.",
-    icon: React.createElement(AiFillCode),
-    date: "2026 Feb - present",
+      "Currently employed as a proficient React developer with expertise in technologies such as React, Next.js, TypeScript, Tailwind, Redux Toolkit.",
+    icon: React.createElement(FaReact),
+    date: "2023 Sept - 2025 Jan",
+    url: "https://www.negroup.com/",
+  },
+  {
+    title: "Suvarchala Solutionzs",
+    location: "Remote",
+    description:
+      "Gained one year of experience as a remote front-end developer, during which I proactively enhanced my skill set to become proficient in full-stack development, thereby broadening my technical capabilities.",
+    icon: React.createElement(CgWorkAlt),
+    date: "2022 Aug - 2023 July",
+    url: "https://suvarchalasolutionzs.com/",
   },
 ] as const;
 

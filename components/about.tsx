@@ -18,27 +18,20 @@ function About() {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-        After graduating with a degree in{" "}
-        <span className="font-medium">Electronics & Communication</span>, I
-        followed my heart into programming. I dove into a coding bootcamp and
-        mastered <span className="font-medium">full-stack web development</span>
-        . <span className="italic">What I love most about coding?</span> That
-        magical moment when everything clicks and a solution comes together. My
-        go-to tools are{" "}
-        <span className="font-medium">
-          React, Next.js, Node.js, and MongoDB
-        </span>
-        . I'm always excited to pick up new tech.
+        ECE grad who followed his heart into code. After a full-stack bootcamp,
+        I found my home in <span className="font-medium">React & Next.js</span>{" "}
+        — building fast, clean web apps and always chasing that{" "}
+        <span className="italic">"it finally works"</span> moment. I'm endlessly
+        curious about new tech and love picking up something new.
       </p>
 
       <p>
-        <span className="italic">When I step away from the keyboard</span>,
-        you'll find me gaming, binge-watching movies, or glued to{" "}
+        Off the keyboard:{" "}
         <span className="font-medium">
-          F1 races, football matches, and NBA games
+          F1 races, NBA games, football matches
         </span>
-        . I'm also teaching myself <span className="font-medium">chess</span> —
-        turns out it's just as challenging as debugging code!
+        , and slowly, painfully losing to{" "}
+        <span className="font-medium">chess bots</span>.
       </p>
     </motion.section>
   );

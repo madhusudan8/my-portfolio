@@ -35,7 +35,6 @@ export default function Skills() {
             key={index}
             variants={fadeInAnimationVariants}
             initial="initial"
-            animate="animate"
             whileInView="animate"
             viewport={{
               once: true,

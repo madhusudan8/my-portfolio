@@ -18,14 +18,14 @@ export const sendEmail = async (formData: FormData) => {
   const message = formData.get("message");
   const senderEmail = formData.get("senderEmail");
 
-  if (!validateString(senderEmail, 50)) {
+  if (!validateString(senderEmail, 254)) {
     return {
       error: "Invalid sender Email",
     };
   }
-  if (!validateString(message, 500)) {
+  if (!validateString(message, 5000)) {
     return {
-      error: "message ",
+      error: "Invalid message. Message length exceeds 5000 characters.",
     };
   }
   let data;
